@@ -13,6 +13,6 @@ if [ $# -eq 1 ];then
 fi
 
 BASEDIR=/Users/rich/Arch/fnlp
-JAVACMD="java -Xmx1024m -Dfile.encoding=UTF-8 -classpath ${BASEDIR}/fnlp-core/target/fnlp-core-2.1-SNAPSHOT.jar:libs/trove4j-3.0.3.jar:libs/commons-cli-1.2.jar org.fnlp.nlp.cn.tag.NERTagger -s ${BASEDIR}/models/seg.m ${BASEDIR}/models/pos.m "
+JAVACMD="java -Xmx1024m -Dfile.encoding=UTF-8 -classpath ${BASEDIR}/fnlp-core/target/fnlp-core-2.1-SNAPSHOT.jar:${BASEDIR}/libs/trove4j-3.0.3.jar:${BASEDIR}/libs/commons-cli-1.2.jar org.fnlp.nlp.cn.tag.NERTagger -s ${BASEDIR}/models/seg.m ${BASEDIR}/models/pos.m "
 ${JAVACMD} "$input" 2>&1
 
